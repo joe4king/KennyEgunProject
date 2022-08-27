@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 4% 8%;
+    background: #1c1c1c;
+    align-items: center;
+}
+
+.header h1{
+    font-size: 32px;
+    color: #fff;
+}
+
+.hr{
+    width: 85%;
+    margin: auto;
+}
+
+.menu{
+    display: none;
+    position: absolute;
+    
+}
+
+.list{
+    cursor: pointer;
+}
+
+.menu li{
+    padding-left: 10%;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu.in-active{
+    display: block;
+    top: 0;
+    color: #fff;
+    background: #1c1c1c;
+    height: 100vh;
+    line-height: 44px;
+    font-family: sans-serif;
+    font-size: 24px;
+    padding-top: 10%;
+    width: 100%;
+    left: 0;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.ham{
+    top: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.ham1{
+    height: 2px;
+    width: 20px;
+    background: #ffff;
+    margin: 4px 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.ham2{
+    height: 2px;
+    width: 20px;
+    background: #fff;
+    margin: 4px 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.ham3{
+    height: 2px;
+    width: 20px;
+    background: #fff;
+    margin: 4px 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.ham.active .ham1{
+    transform: rotate(45deg) translateY(8px);
+}
+
+.ham.active .ham3{
+    transform: rotate(-45deg) translateY(-10px);
+}
+
+.ham.active .ham2{
+    opacity: 0;
+}
+
